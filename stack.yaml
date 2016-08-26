@@ -1,7 +1,7 @@
 flags: {}
 
 resolver: lts-6.6
-compiler: ghcjs-0.2.0.900006006_ghc-7.10.3
+# compiler: ghcjs-0.2.0.900006006_ghc-7.10.3
 
 compiler-check: match-exact
 
@@ -17,22 +17,20 @@ packages:
 - location: '.'
 - location:
     git: https://github.com/ryantrinkle/reflex.git
-    commit: f8338f6b68c9be4e8dcddbbab2098aeffa018535
+    commit: 2e9a8de650857424fb93b372c6d00fda5e99d380
 # 3a7fb30dde160bc31c0bba4f42f7666ea6ca054a
   extra-dep: true
 - location:
     git: https://github.com/ryantrinkle/reflex-dom.git
-    commit: e8b7d31fd2b6a8173e51096b7591ec346e33ad85
+    commit: 77e0c270f6270561d70d0b6ad925fb1ea82612a8
 # 5318d581fe3ef7b2b0f70ac352d6c56700124b98
   extra-dep: true
 - location:
      git: https://github.com/isomorphism/these.git
      commit: cf68c46bd049d23938f351da5618e9a09ef1102c
-- location:
-     git: https://github.com/reflex-frp/reflex-dom-contrib.git
-     commit: d07180518168fb68a9ac2ec2df71f670e8d85e6b
 
 extra-deps:
 - ref-tf-0.4
 - these-0.6.1.0
 - ghcjs-dom-0.2.4.0
+- zenc-0.1.1
